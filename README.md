@@ -26,20 +26,3 @@ bundle exec unicorn
 [rbenv]: https://github.com/sstephenson/rbenv
 [ruby-build]: https://github.com/sstephenson/ruby-build
 
-## Submitting changes
-
-AAF works using [GitHub Flow][flow]. Before you start making any changes, you'll
-want to create your own branch. For this project (and all projects in AAF should
-you be offered a position), you will not need to fork the repository to your own
-account.
-
-We'll be reading your commit log, so if each commit is fairly atomic and has a
-[quality commit message][commit-message], it will be easier for us to understand
-your work.
-
-Please submit your work by pushing **your branch** to the original repository,
-and creating one or more pull requests. The pull requests should be formatted in
-a way that you would feel comfortable submitting to an open source project.
-
-[flow]: https://guides.github.com/introduction/flow/
-[commit-message]: https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
