@@ -1,0 +1,16 @@
+= form_for(@user, url: "/users/#{@user.id}/create", method: :get, html: { class: 'ui form' }) do |f|
+  .field
+    label Login
+    = f.text_field(:login)
+  .field
+    label Password
+    = f.password_field(:password)
+  .field
+    label Email
+    = f.text_field(:email)
+  .field
+    label Website
+    = f.text_field(:website)
+  button.ui.large.primary.icon.button
+    i.icon.checkmark>
+    | Save

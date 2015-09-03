@@ -1,0 +1,17 @@
+p= link_to('/organizations/new', class: 'ui primary icon button') do
+  i.icon.plus
+  | Add Organization
+
+table.ui.compact.table
+  thead
+    tr
+      th Name
+      th Contact Name
+      th Contact Email
+  tbody
+    - @organizations.each do |o|
+      tr
+        td= o.name
+        td= o.contact_name
+        td= o.contact_mail
+        td= link_to('View', organization_path(o), class: 'ui button')

@@ -1,0 +1,21 @@
+p= link_to('/users/new', class: 'ui primary icon button') do
+  i.icon.plus
+  | Add User
+p= link_to('View My Account', user_path(@user), class: 'ui button')
+
+table.ui.compact.table
+  thead
+    tr
+      th Login
+      th Password
+      th Email
+      th Website
+      th
+  tbody
+    - @users.each do |u|
+      tr
+        td= u.login
+        td= u.password
+        td= u.email
+        td= u.website
+        td= link_to('View', user_path(u), class: 'ui button')

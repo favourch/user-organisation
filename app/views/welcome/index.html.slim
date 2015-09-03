@@ -1,0 +1,23 @@
+.ui.icon.warning.message
+  i.inbox.icon
+  .content
+    .header Login Required
+    p Please log in to access the Example Application
+    p
+      | Try username "
+      code> admin
+      | " with password "
+      code> password
+      | "
+
+= form_tag('/login', class: 'ui form') do
+  .field
+    label Login
+    = text_field_tag('login', nil, placeholder: 'Login')
+  .field
+    label Password
+    = password_field_tag('password', nil, placeholder: 'Password')
+
+  button.ui.large.primary.icon.button(type='submit')
+    i.legal.icon>
+    | Login

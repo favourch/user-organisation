@@ -1,0 +1,33 @@
+//= require semantic-ui/dist/semantic
+//= require_tree .
+//= require_self
+
+html, body {
+  height: 100%;
+  background: #eee;
+}
+
+body > header {
+  font-size: 3rem;
+  padding: 3rem 0rem;
+  border-bottom: 1px solid #aaa;
+}
+
+body > #content {
+  padding: 0rem 0rem 3rem;
+  background: white;
+  min-height: 15rem;
+}
+
+body > footer {
+  border-top: 1px solid #aaa;
+
+  p { margin: 0px; }
+}
+
+main {
+  width: 960px;
+  margin-left: -480px;
+  position: relative;
+  left: 50%;
+}

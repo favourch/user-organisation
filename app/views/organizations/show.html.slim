@@ -1,0 +1,19 @@
+table.ui.definition.table
+  tbody
+    tr
+      td Name
+      td= @organization.name
+    tr
+      td Contact Name
+      td= @organization.contact_name
+    tr
+      td Contact Email
+      td= @organization.contact_mail
+  tfoot
+    tr
+      td
+        = link_to('Delete', { controller: 'organizations', action: 'destroy', id: @organization.id }, class: 'ui button')
+        = link_to('Edit', { controller: 'organizations', action: 'edit', id: @organization.id }, class: 'ui button')
+        = link_to({ controller: 'organizations', action: 'contact', id: @organization.id }, class: 'ui primary icon button') do
+          i.icon.deliver>
+          | Contact

@@ -1,0 +1,10 @@
+= form_tag("/organizations/#{@organization.id}/deliver", method: :get, class: 'ui form') do
+  .field
+    label Subject
+    = text_field_tag('subject')
+  .field
+    label Message Body
+    = text_area_tag('body')
+  p: button.ui.primary.icon.button(type='submit')
+    i.icon.send>
+    | Send

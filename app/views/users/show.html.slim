@@ -1,0 +1,19 @@
+table.ui.definition.table
+  tbody
+    tr
+      td Login
+      td= @user.login
+    tr
+      td Password
+      td= @user.password
+    tr
+      td Website
+      td= @user.website
+    tr
+      td Email
+      td= @user.email
+  tfoot
+    tr
+      td
+        = link_to('Delete', { controller: 'users', action: 'destroy', id: @user.id }, class: 'ui button')
+        = link_to('Edit', { controller: 'users', action: 'edit', id: @user.id }, class: 'ui button')

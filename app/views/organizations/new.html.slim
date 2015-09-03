@@ -1,0 +1,13 @@
+= form_for(@organization, url: "/organizations/#{@organization.id}/create", method: :get, html: { class: 'ui form' }) do |f|
+  .field
+    label Name
+    = f.text_field(:name)
+  .field
+    label Contact Name
+    = f.text_field(:contact_name)
+  .field
+    label Contact Email
+    = f.text_field(:contact_mail)
+  button.ui.large.primary.icon.button
+    i.icon.checkmark>
+    | Save
